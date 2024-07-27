@@ -1,0 +1,53 @@
+theme = "comcx"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-save = false
+cursorline = true
+bufferline = "always"
+auto-pairs = true
+cursorcolumn = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "↩ "
+wrap-at-text-width = false
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
+
+[editor.statusline]
+left = [ "mode", "spinner", "diagnostics" ]
+center = [ "file-name", "separator", "version-control" ]
+right = [ "file-type", "separator", "position", "position-percentage", "total-line-numbers" ]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+
+# KEYs
+[keys.normal]
+"A-k" = ["goto_line_end","extend_line_below", "delete_selection", "move_line_up", "paste_before"]
+"A-j" = ["goto_line_end","extend_line_below", "delete_selection", "paste_after"]
+
+[keys.select]
+"A-k" = ["goto_line_end","extend_line_below",  "delete_selection", "move_line_up", "paste_before", "select_mode"]
+"A-j" = ["goto_line_end","extend_line_below",  "delete_selection", "paste_after", "select_mode" ]
+
+[keys.insert]
+"C-[" = "normal_mode"                        # Alternative escape key
+"C-h" = ["goto_first_nonwhitespace"]         # Go to the first non-empty char of the curren line
+"C-l" = ["goto_line_end", "move_char_right"] # Go to the end of the line

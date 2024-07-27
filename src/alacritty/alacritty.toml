@@ -1,0 +1,17 @@
+import = [
+    "~/.config/alacritty/themes/themes/palenight.toml"
+]
+
+[shell]
+program = "/Users/comcx/.cargo/bin/nu"
+
+[font]
+normal = { family = "Hack Nerd Font Mono", style = "Regular" }
+size = 17.5
+
+[window]
+startup_mode = "Maximized"
+opacity = 0.93
+blur = false
+decorations ="buttonless"
+option_as_alt = "Both"
