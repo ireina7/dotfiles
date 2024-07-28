@@ -1,2 +1,3 @@
-inherits = "onedark"
-"ui.background" ={}
+inherits = "catppuccin_frappe"
+"ui.background" = {}
+# "ui.virtual.inlay-hint" = {fg = "text", bg = "dark_gray4" }
